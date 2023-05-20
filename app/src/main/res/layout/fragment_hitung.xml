@@ -27,10 +27,10 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            android:paddingStart="16dp"
-            android:paddingEnd="16dp"
             android:hint="@string/nama"
-            android:inputType="textCapWords"/>
+            android:inputType="textCapWords"
+            android:paddingStart="16dp"
+            android:paddingEnd="16dp" />
     </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
@@ -190,8 +190,5 @@
         app:layout_constraintTop_toTopOf="@+id/hurufTextView"
         android:visibility="invisible"
         tools:visibility="visible"/>
-
-
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
