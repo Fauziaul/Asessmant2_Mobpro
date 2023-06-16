@@ -1,4 +1,4 @@
-package org.d3if0097.hitungnilaiakhir.ui
+package org.d3if0097.hitungnilaiakhir.ui.saran
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -12,6 +12,7 @@ import org.d3if0097.hitungnilaiakhir.databinding.FragmentSaranBinding
 import org.d3if0097.hitungnilaiakhir.model.KategoriNilai
 
 
+
 class SaranFragment : Fragment() {
     private lateinit var binding: FragmentSaranBinding
     private val args: SaranFragmentArgs by navArgs()
@@ -20,7 +21,9 @@ class SaranFragment : Fragment() {
         binding = FragmentSaranBinding.inflate(layoutInflater, container, false)
         return binding.root
     }
-
+    companion object {
+        const val CHANNEL_ID = "updater"
+    }
     private fun updateUI (kategori: KategoriNilai) {
         val actionBar = (requireActivity() as AppCompatActivity).supportActionBar
         when (kategori) {
